@@ -1,0 +1,588 @@
+/*
+SITE COLORS
+site background: rgba(50,50,50,.03);
+red color of logo: #ed3323 | rgb(237,51,35);
+green color of logo: rgb(0,135,81);
+
+*/
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
+/* For modern browsers */
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+  zoom: 1;
+}
+
+/* FONT */
+
+@font-face {
+  font-family: "Nothing you could do";
+  src: url("../_fonts/nothing_you_could_do.eot"); /* IE9 Compat Modes */
+  src: url("../_fonts/nothing_you_could_do.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../_fonts/nothing_you_could_do.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../_fonts/nothing_you_could_do.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../_fonts/nothing_you_could_do.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../_fonts/nothing_you_could_do.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  background: rgba(50, 50, 50, 0.03);
+  background: rgba(50, 50, 50, 0.04);
+}
+
+@media only screen and (min-width: 768px) {
+  /*961*/
+
+  header {
+    width: 960px;
+    margin: 0 auto;
+    height: 80px;
+    position: relative;
+  }
+  #logo {
+    position: relative;
+    top: 5px;
+    /* left: ; */
+    z-index: 3;
+    width: 115px;
+  }
+  #logoText {
+    position: absolute;
+    top: 50px;
+    left: 130px;
+    z-index: 100;
+    width: 190px;
+  }
+  #slogan {
+    position: relative;
+    color: rgba(50, 50, 50, 0.7);
+    letter-spacing: 0.05em;
+    font-family: "Nothing you could do";
+    font-size: 1.4em;
+    font-weight: 100;
+    text-align: center;
+    margin: 0 0 -30px -400px;
+  }
+  #languages {
+    /*margin-top: 10px;
+	float: right;
+	*/
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+  #languages img {
+    width: 20px;
+    margin-left: 15px;
+  }
+  nav {
+    /*float: right;
+	margin-top: -25px;
+	position: relative;*/
+
+    position: absolute;
+    top: -25px;
+    right: 115px;
+  }
+  nav ul li {
+    list-style: none;
+    float: left;
+    margin-left: 35px;
+    position: relative;
+    top: 60px;
+    left: 115px;
+  }
+  nav a:link,
+  nav a:visited {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 0.85em;
+    color: rgb(0, 135, 81);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  nav a:hover,
+  nav a:active {
+    color: #ed3323;
+  }
+  .submenu {
+    position: absolute;
+    left: -1000000px;
+    top: 15px;
+    float: none;
+    width: 300px;
+    padding: 20px 10px 10px;
+    background: rgba(254, 254, 254, 0.8);
+    z-index: 5;
+  }
+  .submenu li {
+    left: -40px;
+    top: 0;
+    clear: both;
+  }
+  .submenu li a:link,
+  .submenu li a:visited {
+    color: rgb(0, 135, 81);
+    font-size: 0.8em;
+    padding: 10px 5px;
+    line-height: 2em;
+  }
+  .submenu li a:hover,
+  .submenu li a:active {
+    color: rgb(237, 51, 35);
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(
+      left,
+      rgba(254, 254, 254, 0.01),
+      rgba(254, 254, 254, 04),
+      rgba(254, 254, 254, 0.01)
+    ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(
+      right,
+      rgba(254, 254, 254, 0.01),
+      rgba(254, 254, 254, 04),
+      rgba(254, 254, 254, 0.01)
+    ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(
+      right,
+      rgba(254, 254, 254, 0.01),
+      rgba(254, 254, 254, 04),
+      rgba(254, 254, 254, 0.01)
+    ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(
+      to right,
+      rgba(254, 254, 254, 0.01),
+      rgba(254, 254, 254, 04),
+      rgba(254, 254, 254, 0.01)
+    ); /* Standard syntax */
+  }
+  nav ul li:hover ul.submenu {
+    left: -10px;
+  }
+  #m_navigation {
+    display: none;
+  }
+  #slideshow {
+    width: 1312px;
+    height: 435px;
+    margin: 0 auto;
+    position: relative;
+  }
+  #body {
+    width: 920px;
+    padding: 40px;
+    position: relative;
+    top: -50px;
+    margin: 0 auto;
+    background: rgba(254, 254, 254, 0.8);
+  }
+  #body h1 {
+    font-family: "Nothing you could do";
+    font-weight: 300;
+    margin-top: -10px;
+    letter-spacing: 0.05em;
+  }
+  #body h1 span {
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.4em;
+    letter-spacing: -0.1em;
+    position: relative;
+    top: -3px;
+  }
+  #toursMenu h1 {
+    margin-top: 5%;
+  }
+  #excursionsMenu {
+    width: 705px;
+  }
+  #excursionsMenu h1 {
+    font-size: 1.5em;
+  }
+
+  section .item {
+    float: left;
+  }
+  #toursMenu {
+    float: left;
+  }
+
+  .imageContainer {
+    width: 205px;
+    height: 205px;
+    border-radius: 102.5px;
+    margin: 0 13px;
+    overflow: hidden;
+  }
+  a:hover .imageContainer img {
+    opacity: 0.85;
+  }
+
+  .descrpt {
+    width: 210px;
+    height: 45px;
+    margin: 10px auto 0;
+  }
+  .descrpt h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+    text-align: center;
+    color: grey;
+    margin: 0;
+  }
+  a:hover .descrpt h3 {
+    color: black;
+  }
+
+  .imageContainer2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin: 0 11.75px;
+    overflow: hidden;
+  }
+  a:hover .imageContainer2 img {
+    opacity: 0.85;
+  }
+  .descrpt2 {
+    margin: 10px auto 0;
+    padding: 0;
+    width: 165px;
+  }
+  a:hover .descrpt2 h3 {
+    color: black;
+  }
+  .descrpt2 h3 {
+    text-align: center;
+    color: gray;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+
+  .tour {
+    width: 660px;
+    float: left;
+  }
+  .tour h1 {
+    font-family: "Nothing you could do";
+    font-size: 1.7em;
+    position: relative;
+    top: -10px;
+  }
+  /*za ispravno formatiranje iz baze koje je ispravljeno pomocu nicEdit */
+  .tour p {
+    font: 0.97em "Raleway", sans-serif !important;
+    font-weight: 300 !important;
+    line-height: 1.6em !important;
+    margin-top: -15px !important;
+    margin-bottom: 1.8em !important;
+  }
+  .tour div {
+    line-height: 1.6em !important;
+  }
+  /*
+	.tour p br, .tour div br, .tour br{
+		content: "A" !important;
+	    display: block !important;
+	    margin-bottom: 1em !important;
+	}*/
+  .tour b,
+  .tour strong {
+    font: 1em "Raleway", sans-serif !important;
+    font-weight: 600 !important;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .tour ul {
+    margin-top: -15px;
+  }
+  .tour ul li {
+    font: 1em "Raleway", sans-serif !important;
+    line-height: 1.6em !important;
+    font-weight: 100 !important;
+    list-style: none;
+    margin-bottom: 0.5em;
+  }
+  .tour li:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    margin-left: -14px;
+    color: rgb(0, 135, 81);
+  }
+
+  /*za ispravan prikaz u nicEdit textarea */
+
+  /**/
+
+  .tour a:link,
+  a:visited {
+    color: rgb(0, 135, 81);
+  }
+  .tour a img {
+    margin: 0 15px 5px 0;
+    width: 100px;
+    height: 63px;
+    opacity: 0.95;
+  }
+  .tour a img:hover {
+    cursor: pointer;
+  }
+  .tour h3 {
+    font-family: "Nothing you could do";
+    color: rgb(0, 135, 81);
+  }
+  .tour .toursUL {
+    margin-top: 15px;
+  }
+  .tour .toursUL li:before {
+    content: "";
+    margin-left: -5px;
+  }
+  .tour .toursUL li {
+    font-size: 1em !important;
+    line-height: 1.3 !important;
+    list-style: disc;
+    color: rgba(75, 141, 88, 0.8);
+  }
+  .tour .toursUL a:link,
+  .tour .toursUL a:visited {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 0.9em;
+    text-decoration: none;
+  }
+  .tour .toursUL a:hover,
+  .tour .toursUL a:active {
+    color: rgb(0, 135, 81);
+  }
+  .tour hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0)
+    );
+  }
+  .imagePreview {
+    width: 60px;
+    height: 38px;
+    border: 1px solid rgb(0, 135, 81);
+  }
+  a:link,
+  a:visited {
+    color: rgb(237, 51, 35);
+    text-decoration: none;
+  }
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+  aside {
+    float: right;
+    font-family: "Nothing you could do";
+    width: 205px;
+    min-height: 410px;
+    margin-bottom: 0;
+  }
+  aside h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+    position: relative;
+    top: 10px;
+  }
+  aside p {
+    color: rgba(0, 0, 0, 0.9);
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 0.85em;
+    line-height: 1.5em;
+  }
+  form {
+    float: left;
+    font-size: 0.8em;
+    font-family: "Raleway", sans-serif;
+  }
+  form textarea {
+    display: block;
+  }
+  form input[type="text"],
+  form textarea[name="comments"] {
+    font-family: "Raleway", sans-serif;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    background: white;
+  }
+  form textarea[name="comments"] {
+    font-size: 1em;
+    width: 450px;
+    height: 150px;
+  }
+  form input[type="submit"] {
+    font-size: 1.1em;
+    color: white;
+    background: rgba(0, 135, 81, 0.85);
+    padding: 7px 25px;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  form input[type="submit"]:hover {
+    color: white;
+    background: #ed3323;
+  }
+
+  form input[name="username"],
+  form input[name="password"] {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 3px;
+  }
+
+  /*** UPDATE FORM ***/
+  form input[type="text"][name="heading"] {
+    font-family: "Nothing you could do";
+    font-size: 1.3em;
+    background: none;
+    border-color: gray;
+    border-radius: 3px;
+    padding: 5px;
+  }
+
+  form[name="tours"] textarea[name="content"] {
+    font: 1.2em "Raleway", sans-serif;
+    line-height: 1.5em;
+    background: none;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 5px;
+  }
+  form[name="aside1"] input[type="text"],
+  form[name="aside2"] input[type="text"] {
+    width: 205px;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  form[name="aside1"] textarea[name="content"],
+  form[name="aside2"] textarea[name="content"] {
+    width: 205px;
+    font: 1.1em "Raleway", sans-serif;
+    background: none;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 3px;
+  }
+
+  /*** FOOTER ***/
+  footer {
+    width: 100%;
+    height: 260px;
+    background: rgb(50, 50, 50);
+    clear: both;
+  }
+  footer section {
+    width: 900px;
+    margin: 0 auto;
+    padding: 50px 0 0;
+  }
+  footer img#footerLogo {
+    float: left;
+  }
+  footer article {
+    float: left;
+    width: 145px;
+    padding: 0 30px;
+    border-left: 1px solid white;
+    border-color: rgba(256, 256, 256, 0.6);
+  }
+  footer article:first-of-type {
+    border-left: none;
+    margin-left: 30px;
+  }
+  footer h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: rgb(0, 135, 81);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin-top: 0;
+  }
+  footer p {
+    font-family: "Raleway", sans-serif;
+    color: rgba(256, 256, 256, 0.6);
+    font-weight: 200;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    margin: 0;
+  }
+  footer hr {
+    clear: both;
+    margin-top: 120px;
+    border-color: rgba(256, 256, 256, 0.5);
+  }
+  footer section > p {
+    text-align: center;
+  }
+  footer a:link,
+  footer a:visited {
+    color: rgba(256, 256, 256, 0.6);
+    text-decoration: none;
+  }
+  footer a:hover,
+  footer a:active {
+    color: rgba(256, 256, 256, 0.8);
+  }
+
+  #social_icons {
+    float: right;
+    margin-left: 12px;
+    margin-top: 20px;
+  }
+  #footerLogo:hover,
+  #social_icons:hover {
+    opacity: 0.8;
+  }
+
+  /*** MESSAGING FORM VALIDATION ***/
+  .messageAffirmation {
+    color: rgb(0, 135, 81);
+    text-transform: uppercase;
+    font: 1.3em "Raleway", sans-serif;
+  }
+  .messageNegation {
+    color: rgb(237, 51, 35);
+    text-transform: uppercase;
+    font: 1.3em "Raleway", sans-serif;
+  }
+  .loginMessage {
+    color: rgb(237, 51, 35);
+    font: 1em "Raleway", sans-serif;
+    font-weight: 300;
+    clear: both;
+    position: relative;
+    top: 20px;
+  }
+} /*media only screen and (min-width: 959px)*/

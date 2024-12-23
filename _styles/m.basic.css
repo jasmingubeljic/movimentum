@@ -1,0 +1,387 @@
+@media only screen and (max-width: 767px) {
+  /*960*/
+
+  /*temporary style in order to hide parts of the screen area*/
+  nav {
+    display: none;
+  }
+  #m_navigation {
+    position: relative;
+    width: 155px;
+    margin: 30px auto 0;
+  }
+  #m_navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #m_navigation a {
+    display: block;
+    margin-right: 25px;
+    width: 35px;
+    float: left;
+  }
+  #m_navigation a img {
+    width: 35px;
+    filter: grayscale(10%);
+  }
+  #m_navigation li:last-child a {
+    margin-right: 0;
+  }
+
+  /*m_submenu*/
+  ul#m_submenu {
+    position: absolute;
+    z-index: 10;
+    top: 50px;
+    left: -500000px;
+    width: 35px;
+    margin-top: -15px;
+    padding: 25px 15px 15px;
+    background: rgba(254, 254, 254, 0.9);
+  }
+  #m_navigation ul li:hover ul#m_submenu {
+    left: -15px;
+  }
+  ul#m_submenu li a {
+    margin-bottom: 13px;
+  }
+  ul#m_submenu li:last-child a {
+    margin-bottom: 0;
+  }
+
+  ul#m_submenu_2 {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 37px;
+    left: -90000px;
+    min-width: 250px;
+    padding: 15px;
+    background: white;
+  }
+  ul#m_submenu_2 li a {
+    float: none;
+    margin: 18px 0;
+    font-size: 0.95em;
+    line-height: 0.95em;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 135, 81);
+    margin-bottom: 10px;
+  }
+  #m_navigation ul li:hover ul#m_submenu_2 {
+    left: -63px;
+  }
+
+  #slogan {
+    display: none;
+  }
+
+  body {
+    background: rgba(50, 50, 50, 0.03);
+  }
+  header,
+  #body {
+    padding: 5%;
+  }
+  header {
+    z-index: 500;
+  }
+  #logo {
+    width: 130px;
+    display: block;
+    margin: -5px auto 20px;
+    z-index: 1000;
+  }
+  #logoText {
+    width: 190px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    z-index: 1000;
+  }
+  #languages {
+    display: none;
+    /*margin: 20px 0 0 -15px;
+	text-align: center;
+	opacity: .8;
+	z-index: 100;*/
+  }
+  #languages img {
+    width: 30px;
+    margin-left: 15px;
+  }
+  #slideshow {
+    position: relative;
+    display: block;
+    /*margin: 0 0 -3% -20%;
+	width: 65%;*/
+    width: 100%;
+    min-height: 170px;
+    margin-bottom: -130px;
+    overflow: hidden;
+  }
+  .jssora05l,
+  .jssora05r {
+    display: none !important;
+  }
+  .jssorb01 {
+    display: none !important;
+  }
+  h1 {
+    font: 1.6em "Nothing you could do";
+    line-height: 1.3em;
+    margin: 5em 0 1em;
+    display: block;
+    width: 90%;
+  }
+  h1 span {
+    display: none;
+  }
+  .item {
+    text-align: center;
+    margin: 0 auto;
+  }
+  a h3 {
+    text-decoration: none;
+  }
+  .imageContainer img {
+    min-width: 170px;
+    max-width: 240px;
+    width: 80%;
+    border-radius: 60%;
+  }
+  .descrpt {
+    min-width: 170px;
+    max-width: 220px;
+    margin: 0 auto;
+    margin-bottom: 1.4em;
+  }
+  .descrpt h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.85);
+    margin: 0;
+  }
+  aside {
+    opacity: 0.95;
+  }
+  aside h2 {
+    font: 1.35em "Nothing you could do";
+    margin-bottom: -0.5em;
+  }
+  aside p {
+    font: 1em "Raleway", sans-serif;
+    font-weight: 100;
+    line-height: 1.5em;
+  }
+
+  form input[type="text"],
+  form textarea[name="comments"] {
+    width: 60%;
+    font: 1em "Raleway", sans-serif;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    background: rgba(254, 254, 254, 0.8);
+  }
+  form textarea[name="comments"] {
+    font-size: 1em;
+    width: 90%;
+    height: 150px;
+  }
+  form input[type="submit"] {
+    font-size: 1em;
+    color: white;
+    background: rgba(0, 135, 81, 0.85);
+    padding: 7px 15px;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 10px 0 25px 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  a:hover .descrpt h3 {
+    color: black;
+  }
+
+  .item {
+    /*float: left;*/
+  }
+  .imageContainer2 img {
+    margin: 0 auto;
+    min-width: 150px;
+    max-width: 180px;
+    width: 60%;
+    border-radius: 60%;
+  }
+  .descrpt2 {
+    margin-bottom: 1.3em;
+  }
+  .descrpt2 h3 {
+    font: 0.8em "Raleway", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0;
+  }
+
+  .tour h3 {
+    font-family: "Nothing you could do";
+    color: rgb(0, 135, 81);
+  }
+  .tour p {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.05em;
+    font-weight: 300;
+    line-height: 1.6em;
+  }
+  .tour p br {
+    content: "A" !important;
+    display: block !important;
+    margin-bottom: 1em !important;
+  }
+  .tour a:link,
+  a:visited {
+    color: rgb(0, 135, 81);
+  }
+  .tour a img {
+    margin: -10px 15px 20px 0;
+    width: 100px;
+    height: 63px;
+  }
+  .tour a img:hover {
+    cursor: pointer;
+  }
+  .tour ul li {
+    font: 1em "Raleway", sans-serif !important;
+    line-height: 1.7em !important;
+    font-weight: 100 !important;
+    list-style: none;
+    margin-bottom: 0.5em;
+  }
+  .tour li:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    margin-left: -14px;
+    color: rgb(0, 135, 81);
+  }
+  .tour li:last-child {
+    margin-bottom: 30px;
+  }
+
+  .tour .toursUL li:before {
+    content: "";
+    margin-left: -5px;
+  }
+  .tour .toursUL li {
+    font-size: 1em !important;
+    line-height: 1.4 !important;
+    list-style: disc;
+    color: rgba(75, 141, 88, 0.8);
+  }
+  .tour .toursUL a:link,
+  .tour .toursUL a:visited {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 0.9em;
+    text-decoration: none;
+  }
+  .tour .toursUL a:hover,
+  .tour .toursUL a:active {
+    color: rgb(0, 135, 81);
+  }
+  .tour hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  .tour ul {
+    margin-top: -12px;
+  }
+  .tour ul li {
+    color: black;
+    font: 1em "Raleway", sans-serif !important;
+    line-height: 1.6em !important;
+    font-weight: 100 !important;
+    list-style: none;
+    margin-left: -20px;
+  }
+  .tour li:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: rgb(0, 135, 81);
+  }
+  .tour .toursUL li a {
+    font-size: 1em;
+    font-weight: 100;
+    color: black;
+  }
+  /*za ispravan prikaz u nicEdit textarea */
+
+  /**/
+
+  footer {
+    width: 90%;
+    padding: 5%;
+    background: rgb(50, 50, 50);
+    clear: both;
+  }
+  footer h3 {
+    color: rgb(0, 135, 81);
+    font: 0.9em "Raleway", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 1.5em 0 0.3em;
+  }
+  footer p {
+    color: rgba(256, 256, 256, 0.6);
+    font-family: 0.9em "Raleway", sans-serif;
+    font-weight: 200;
+    line-height: 1.4em;
+    margin: 0;
+  }
+  footer a {
+    color: rgba(256, 256, 256, 0.6);
+  }
+  #social_icons {
+    margin: 1.2em 0.6em 0.5em 0;
+  }
+  footer hr {
+    margin-left: -5%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgba(254, 254, 254, 0.5),
+      rgba(254, 254, 254, 0.2),
+      rgba(0, 0, 0, 0)
+    );
+  }
+  footer p {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .rights {
+    margin-top: 1em;
+    font-size: 0.9em;
+  }
+  .loginLink {
+    display: none;
+  }
+} /*@media only screen and (max-width: 960px)*/
